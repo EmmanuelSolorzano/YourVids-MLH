@@ -18,6 +18,7 @@ Hi MLH! Welcome to my personal web application. Here are some exciting features:
   - Delete comments
   - Like/Dislike videos
   - Content creator channels
+  - Share videos
 
 - **Additional Features:**
   - Views counter to track video popularity
