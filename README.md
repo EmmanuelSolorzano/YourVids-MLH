@@ -11,9 +11,11 @@ Hi MLH! Welcome to my personal web application. Here are some exciting features:
 - **Video Operations:**
   - Upload videos
   - Edit your videos
+  - Delete Videos
 
 - **Community Engagement:**
   - Comment on videos
+  - Delete comments
   - Like/Dislike videos
 
 - **Additional Features:**
@@ -28,7 +30,7 @@ Check out a live demo of the application [here](https://YourVids.live).
 ## Getting Started:
 
 ### Prerequisites:
-- Node.js v26.6.0
+- Node.js v20.6.0
 - Python 3.9
 
 ### Running Locally:
