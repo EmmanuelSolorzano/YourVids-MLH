@@ -34,18 +34,29 @@ Check out a live demo of the application [here](https://YourVids.live).
 ### Running Locally:
 
 1. Clone the repository:
+   ```
    $ git clone https://github.com/your-username/YourVids.git
-2. Install frontend dependencies and start the application:
+   ```
+3. Install frontend dependencies and start the application:
+   ```
    $ npm install
    $ npm start
-3. For the backend, navigate to the Server/ folder:
+   ```
+5. For the backend, navigate to the Server/ folder:
+   ```
    $ cd Server/
-4. Set up a virtual environment:
+   ```
+7. Set up a virtual environment:
+   ```
    $ virtualenv venv
    $ source venv/bin/activate
-5. Install Python dependencies:
+   ```
+9. Install Python dependencies:
+    ```
    $ pip install -r requirements.txt
-6. Run the Django server:
+    ```
+11. Run the Django server:
+    ```
    $ cd yourvids/
    $ python3 manage.py runserver
-
+   ```
