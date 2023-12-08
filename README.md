@@ -37,25 +37,25 @@ Check out a live demo of the application [here](https://YourVids.live).
    ```
    $ git clone https://github.com/your-username/YourVids.git
    ```
-3. Install frontend dependencies and start the application:
+2. Install frontend dependencies and start the application:
    ```
    $ npm install
    $ npm start
    ```
-5. For the backend, navigate to the Server/ folder:
+3. For the backend, navigate to the Server/ folder:
    ```
    $ cd Server/
    ```
-7. Set up a virtual environment:
+4. Set up a virtual environment:
    ```
    $ virtualenv venv
    $ source venv/bin/activate
    ```
-9. Install Python dependencies:
-    ```
+5. Install Python dependencies:
+   ```
    $ pip install -r requirements.txt
-    ```
-10. Run the Django server:
+   ```
+6. Run the Django server:
    ```
    $ cd yourvids/
    $ python3 manage.py runserver
