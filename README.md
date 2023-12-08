@@ -55,8 +55,8 @@ Check out a live demo of the application [here](https://YourVids.live).
     ```
    $ pip install -r requirements.txt
     ```
-11. Run the Django server:
-    ```
+10. Run the Django server:
+   ```
    $ cd yourvids/
    $ python3 manage.py runserver
    ```
