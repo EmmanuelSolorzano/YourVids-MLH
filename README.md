@@ -11,12 +11,13 @@ Hi MLH! Welcome to my personal web application. Here are some exciting features:
 - **Video Operations:**
   - Upload videos
   - Edit your videos
-  - Delete Videos
+  - Delete your videos
 
 - **Community Engagement:**
   - Comment on videos
   - Delete comments
   - Like/Dislike videos
+  - Content creator channels
 
 - **Additional Features:**
   - Views counter to track video popularity
