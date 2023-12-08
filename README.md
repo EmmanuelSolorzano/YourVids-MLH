@@ -38,7 +38,7 @@ Check out a live demo of the application [here](https://YourVids.live).
 
 1. Clone the repository:
    ```
-   $ git clone https://github.com/your-username/YourVids.git
+   $ git clone https://github.com/EmmanuelSolorzano/YourVids.git
    ```
 2. Install frontend dependencies and start the application:
    ```
