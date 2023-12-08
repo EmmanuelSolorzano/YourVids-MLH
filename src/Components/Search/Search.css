@@ -1,0 +1,33 @@
+.heading-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.hcolor {
+  margin-left: 4px;
+  color: #409012;
+}
+
+h2 {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.backHome {
+  margin-left: 1rem;
+  padding: 10px 20px;
+  background-color: #409012;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.backHome:hover {
+  background-color: #74b94b;
+  color: black;
+}

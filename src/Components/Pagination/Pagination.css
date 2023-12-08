@@ -1,0 +1,85 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  
+  .pagination a {
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .pagination a:hover {
+    background-color: #f0f0f0;
+    color: black !important;
+  }
+  
+  .pagination .active a {
+    background-color: #409012;
+    color: #fff;
+  }
+  
+  
+  
+  /* Media query para pantallas de 724px o menos */
+  .videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin: 0 auto;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+    max-width: 65%;
+  }
+
+  @media (max-width: 1400px) {
+    .videos {
+      max-width: 90%;
+    }
+  }
+  
+  /* Media query para pantallas de 724px o menos */
+  @media (max-width: 800px) {
+    .videos {
+      flex-direction: column; /* Cambia a disposición en columna */
+      align-items: center; /* Centra los elementos verticalmente */
+      margin: 0;
+      padding: 0 1rem;
+      gap: 1.6rem;
+      max-width: 100%;
+    }
+
+    @media (max-width: 800px) {
+      .video {
+        width: 95%;
+      }
+    }
+
+    .pagination {
+        margin-top: 1rem;
+      }
+  }
+  
+  
+  
+
+  .heading-container {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-bottom: 2rem;
+  }
+  
+  .hcolor {
+    margin-left: 4px;
+    color: #409012;
+  }
+  
+  h2 {
+    margin: 0 auto;
+  }

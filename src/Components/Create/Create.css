@@ -1,0 +1,56 @@
+.back {
+    background: #f8f8f8;
+    border: 3px dashed #f0f0f0;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 75px 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.back:hover {
+    border: 3px dashed deepskyblue;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.separation {
+    margin-top: 2rem;
+}
+
+.login {   
+    background-color: rgb(64, 0, 66);
+    
+    padding: 3rem;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 4rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 800px) {
+    .login {
+        width: 80%;
+    }
+}
+
+.errorp {
+    color: red;
+}
+
+.videoname{
+    color: #409012;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.checkvideo {
+    color: white;
+    text-align: justify;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,47 @@
+.link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  
+
+  .card {
+    --bs-card-border-width: 0;
+  }
+
+.options {
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.options > button {
+    margin: 0 0.5rem;
+}
+
+.editTitle {
+    padding-top: 1rem;
+}
+
+.linkTitle {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+.linkTitle:hover{
+    color: #409012;
+}
+
+  .linkChannel {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+  }
+
+  .linkChannel:hover {
+    color: #480442;
+  }
+
+  .checkvideos{
+    color: black;
+  }

@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.hcolor, h2, h3{
+  color: white;
+}
+
+body {
+  background-image: repeating-linear-gradient(45deg, #53114f 0, #53114f 1px, transparent 0, transparent 50%);
+background-size: 37px 37px;
+background-color: #480442;
+
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: .8rem;
+}

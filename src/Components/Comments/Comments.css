@@ -1,0 +1,63 @@
+.commsec {
+    padding: 1rem;
+    border-radius: 0.7rem;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.container {
+    width: 90%;
+}
+
+.commsec-title {
+    font-size: 1.5em;
+}
+
+.commsec-intro {
+    font-size: large;
+}
+
+.scroll {
+    height:20rem;
+    overflow: scroll;
+}
+
+.profilephoto {
+    height: 2rem;
+    width: 2rem;
+}
+
+.containercomment {
+    align-items: left;
+    text-align: left;
+}
+
+.nombrecreador {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.botoncomment {
+    margin-top: 1rem;
+}
+
+.linkChannel {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .linkChannel:hover {
+    color: #480442;
+  }
+
+.buttonpoints {
+    text-align: end;
+    right: 0;
+    margin-left: auto;
+}
+
+.controlsbutton {
+    display: flex;
+}

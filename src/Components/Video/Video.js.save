@@ -1,0 +1,75 @@
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import Banner from "../Banner/Banner";
+import NavScroll from "../NavScroll/NavScroll";
+import ReactPlayer from 'react-player/lazy'
+import { Link } from 'react-router-dom';
+import './Video.css'
+import PaginationResults from "../Pagination/PaginationResults";
+
+
+function Video() {
+  const { id } = useParams();
+  const [videoData, setVideoData] = useState(null);
+  const [results, setResults] = useState(null);
+
+  useEffect(() => {
+    fetch(`django/videos/list/${id}`)
+      .then(res => res.json())
+      .then(data => {
+        setVideoData(data);
+	console.log(data);
+	fetchResults(data.title);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }, [id]);
+
+  const fetchResults = (title) =>{
+    fetch(`django/videos/?title=${title}`)
+    .then(res => res.json())
+    .then(data => {
+      setResults(data.results);
+      console.log(data.results);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+  }
+
+
+  return (
+    <div>
+      <NavScroll />
+      <Banner />
+      {videoData && (
+        <div className="videoContainer">
+          <p className="titleCard">{videoData.title}</p>
+          <Link className="channelCard" to={`/channel/${videoData.creator}`}>Canal: {videoData.creator}</Link>
+          <ReactPlayer height='25' width='25' url={videoData.video_file} controls={true} volume={0} />
+        </div>
+      )}
+      {results &&
+      <>
+      <div className="marginh">
+        <h2>Videos relacionados:</h2>
+      </div>
+      
+      <div>
+          <PaginationResults searchLocal={videoData.title}/>
+      </div>
+
+      </>
+      }
+
+
+      
+
+
+
+    </div>
+  );
+}
+
+export default Video;

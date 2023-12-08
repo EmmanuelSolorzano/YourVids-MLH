@@ -1,0 +1,46 @@
+.login {   
+    background-color: rgb(64, 0, 66);
+    
+    padding: 4rem;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 4rem;
+    border-radius: 2rem;
+}
+
+@media (max-width: 800px) {
+    .login {
+        width: 80%;
+    }
+}
+
+.loginP{
+    color: white !important;
+}
+
+.search-buttonlog {
+    margin-top: 3rem;
+    padding: 10px 20px;
+    background-color: #409012;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .search-buttonlog:hover {
+    background-color: #74b94b;
+    text-decoration: none;
+    
+  }
+  
+  .search-buttonPlog{
+    color: white;
+    text-decoration: none;
+  }
+  .search-buttonPlog:hover{
+    text-decoration: none;
+    color: inherit;
+  }

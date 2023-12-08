@@ -1,0 +1,174 @@
+.videoContainer{
+    margin: 0 auto;
+    width: 50%;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 800px) {
+    .videoContainer{
+        width: 95%;
+        padding: 0.5rem;
+    }
+}
+
+.titleCard {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.channelCard {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+  .channelCard:hover {
+    color: #480442;
+  }
+
+
+.marginh{
+    margin-top: 3rem;
+}
+
+.player {
+    margin-top: 1rem;
+    --plyr-color-main: #409012;
+    height: 25;
+    width: 25;
+    margin-bottom: 1rem;
+}
+
+.channelavatar {
+    margin-bottom: .8rem;
+    display: flex;
+}
+
+.channelavatarletter{
+    margin-top: 0.35rem;
+    margin-left: 0.6rem;
+    font-weight: bold;
+    color:#480442;
+}
+
+.notf {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.likes {
+    margin-bottom: 0.6rem;
+}
+
+.likes p {
+    font-size: 1.2rem;
+    font-weight:900;
+}
+
+.likes div {
+    margin: 0 1rem;
+}
+
+.likes svg {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.buttonlike {
+    border-radius: .8rem;
+    width: 5rem;
+    height: 4.4rem;
+    background-color: #409012;
+    color: white;
+}
+
+.buttonshare {
+    border-radius: .8rem;
+    width: 7rem;
+    height: 4.6rem;
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+
+.buttonshare svg {
+    height: 1.9rem;
+    width: 1.9rem;
+    margin: 0;
+}
+
+.buttonshare p {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.2rem;
+    float: none;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+.buttonshare a {
+    text-align: center;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonsharebox {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    justify-content: center;
+}
+
+.buttonsharebox a{
+    text-align: center;
+}
+
+.buttonlikeactive {
+    border-radius: .8rem;
+    width: 5rem;
+    height: 4.4rem;
+    background-color: #480442;
+    color: white;
+    box-shadow: 0;
+}
+
+.infolikes {
+    margin-top: 0.5rem;
+    font-size: 1rem !important;
+}
+
+
+.viewssvg {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.4rem;
+}
+
+.viewsbox {
+    display: flex;
+    margin-top: 0.45rem;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.viewsletter {
+    margin-top: 0.08rem;
+    margin-right: 0.2rem;
+}
+
+.descriptionvideo{
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.descriptionvideotitle{
+    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
