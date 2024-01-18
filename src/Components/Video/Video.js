@@ -170,7 +170,7 @@ function Video() {
           if(localStorage.getItem('userData') !== null){
             AuthService.requestWithRefresh({
               method: 'GET',
-              url: `${API}/videos/email/${id}/`,
+              url: `${API}/videos/email/${id}`,
               headers:{
                   'accept': 'application/json',
               }
