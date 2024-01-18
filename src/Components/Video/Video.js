@@ -37,7 +37,6 @@ function Video() {
     fetch(`${API}/videos/list/${id}`)
       .then(res => res.json())
       .then(data => {
-        fetchResults(data.title)
         setVideoData(data);
         if(data.description === ""){
           setMessageShare(`${data.title}\nhttps://yourvids.live/video/${data.id}`)
@@ -64,18 +63,6 @@ function Video() {
         console.log(err);
       });
   }, [id]);
-
-  const fetchResults = (title) =>{
-    fetch(`${API}/videos/?title=${title}`)
-    .then(res => res.json())
-    .then(data => {
-      setResults(data.results);
-      console.log(data.results);
-    })
-    .catch(err => {
-      console.log(err);
-    });
-  }
 
 
   function likeVideo () {
@@ -283,27 +270,6 @@ function Video() {
           <Comments id={id}/>
         </div>
       )}
-      
-      {results &&
-      <>
-      {results.length > 1 ? (
-        <>
-        <div className="marginh">
-          <h2>Videos relacionados</h2>
-        </div>
-        
-        <div>
-            <PaginationResults searchLocal={videoData.title}/>
-        </div>
-        </>
-      ): (
-        <div className="marginh">
-          <h2>Videos relacionados</h2>
-          <h3 className="notf">No se encontraron videos relacionados.</h3>
-        </div>
-      )}
-      </>
-      }
 
     </div>
   );
