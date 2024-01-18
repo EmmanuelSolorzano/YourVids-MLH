@@ -109,8 +109,8 @@ export default function VideoComponent(props) {
                           open={Boolean(menuAnchor)}
                           onClose={handleMenuClose}
                         >
-                          <MenuItem onClick={() => handleOptionEdit()}>Editar Video</MenuItem>
-                          <MenuItem onClick={() => handleDelete(props.id)}>Eliminar Video</MenuItem>
+                          <MenuItem onClick={() => handleOptionEdit()}>Editar Curso</MenuItem>
+                          <MenuItem onClick={() => handleDelete(props.id)}>Eliminar Curso</MenuItem>
                         </Menu>
                       </>}
                 </div>

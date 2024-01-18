@@ -37,7 +37,6 @@ export default function Comment(props) {
 
   return (
     <div className="media mb-3 containercomment">
-      <Link to={`/channel/${creator}`} className='linkChannel'>
       <img
         className="mr-3 bg-light rounded profilephoto"
         width="48"
@@ -46,7 +45,6 @@ export default function Comment(props) {
         alt={creator}
       />
       <b className="nombrecreador">{creator}</b>
-      </Link>
       <div className="media-body p-2 shadow-sm rounded bg-light border">
         <div className="controlsbutton">
           <div>

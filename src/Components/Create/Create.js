@@ -102,7 +102,7 @@ render() {
       <>
         <NavScroll />
       <div className='login'>
-        <h2 className="separation">Título de tu video</h2>
+        <h2 className="separation">Título de tu curso</h2>
         <input
             type="text"
             value={this.state.title}
@@ -110,7 +110,7 @@ render() {
             placeholder='Título de tu video'
         />
 
-        <h2 className="separation">Descripción de tu video</h2>
+        <h2 className="separation">Descripción de tu curso</h2>
           <textarea
             value={this.state.description}
             onChange={(e) => this.setState({ description: e.target.value })}
@@ -118,7 +118,7 @@ render() {
             maxlength="1000"
           />
 
-        <h2 className="separation">¡Sube tu video!</h2>
+        <h2 className="separation">¡Sube tu curso!</h2>
         <Dropzone onDrop={this.onDropVideo} accept="video/mp4, video/avi, video/hevc, video/webm, video/mov, video/mpeg-4">
             {({isDragActive, getRootProps, getInputProps}) => (
                 <section className="container">
