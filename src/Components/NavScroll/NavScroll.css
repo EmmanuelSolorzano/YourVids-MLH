@@ -17,9 +17,11 @@
 
   @media (max-width: 800px) {
     .hnav {
+      margin-top: 1rem;
       font-size: 1.5rem;
     }
     .hcolornav {
+      margin-top: 1rem;
       font-size: 1.5rem;
     }
 }
