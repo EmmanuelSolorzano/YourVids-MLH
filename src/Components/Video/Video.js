@@ -130,6 +130,7 @@ function Video() {
     };
 
   useEffect(() => {
+    console.log(JSON.parse(localStorage.getItem('userData')));
     if(seen){
       fetch(`${API}/videos/views/${id}/`, {
       method: 'GET',
@@ -164,7 +165,27 @@ function Video() {
         const handleControlsHidden = () => {
           setSeen(true);
         };
+
+        const handleVideoEnd = () => {
+          if(localStorage.getItem('userData') !== null){
+            AuthService.requestWithRefresh({
+              method: 'GET',
+              url: `${API}/videos/email/${id}/`,
+              headers:{
+                  'accept': 'application/json',
+              }
+            })
+            .then(data => {
+              console.log("Correo enviado");
+            })
+            .catch(error => {
+              console.log("Error al enviar correo");
+            });
+          }
+        };
+        
         player.on('controlshidden', handleControlsHidden);
+        player.on('ended', handleVideoEnd);
     };
 
     if (videoRef.current) {

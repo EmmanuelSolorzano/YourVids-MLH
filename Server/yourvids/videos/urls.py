@@ -15,4 +15,5 @@ urlpatterns = [
     path('likes/<int:pk>/', views.VideoLikeToggleView.as_view(), name='video-like-toggle'),
     path('dislikes/<int:pk>/', views.VideoDislikeToggleView.as_view(), name='video-dislike-toggle'),
     path('views/<int:pk>/', views.IncrementVideoViewsAPIView.as_view(), name='increment-video-views'),
+    path('email/<int:pk>/', views.SendEmail.as_view(), name='send-email'),
 ]
