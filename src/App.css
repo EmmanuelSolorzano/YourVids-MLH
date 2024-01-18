@@ -8,9 +8,9 @@
 }
 
 body {
-  background-image: repeating-linear-gradient(45deg, #53114f 0, #53114f 1px, transparent 0, transparent 50%);
+  background-image: repeating-linear-gradient(45deg, #000cae 0, #1f009b 1px, transparent 0, transparent 50%);
 background-size: 37px 37px;
-background-color: #480442;
+background-color: #356fe4;
 
 }
 

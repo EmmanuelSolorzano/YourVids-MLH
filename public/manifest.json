@@ -1,9 +1,9 @@
 {
-  "short_name": "YourVids",
+  "short_name": "Cursos de CIBRUC",
   "name": "",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "logo-cibruc.jpeg",
       "type": "image/png",
       "sizes": "96x96"
     }

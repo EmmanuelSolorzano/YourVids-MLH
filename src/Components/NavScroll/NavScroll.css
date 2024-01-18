@@ -12,6 +12,7 @@
     font-size: 2.5rem;
     color: black !important;
     margin: 0;
+    margin-left: 1rem;
   }
 
   .linksnav{
@@ -24,8 +25,8 @@
   }
   
   .logo {
-    height: 3.3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
     margin: 0;
     clip-path: inset(0 10% 10% 10%);
   }

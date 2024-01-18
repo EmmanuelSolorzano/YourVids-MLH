@@ -133,7 +133,7 @@ render() {
                           onChange={(e) => this.setState({ isPublic: e.target.checked })}
                         />
                       }
-                      label="Público: Se publicará en la página de inicio si esta casilla está activada, de lo contrario, únicamente en su canal."
+                      label="Público: Se publicará en la página de inicio si esta casilla está activada, de lo contrario, se mantendrá privado."
                     />
 
                     {this.state.video.length > 0 &&

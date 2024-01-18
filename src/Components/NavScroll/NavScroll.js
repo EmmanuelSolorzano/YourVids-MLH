@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import AuthService from '../AuthService/AuthService';
 import React, { useState } from "react";
 import "./NavScroll.css";
-import logo from "./img/logo.png"
+import logo from "./img/logo-cibruc.jpeg";
 
 function NavScroll() {
   const handleLogout = () => {
@@ -21,7 +21,7 @@ function NavScroll() {
         <div className="heading-containernav">
           <img src={logo} className='logo'/>
           <h1 className='hnav'>
-          YourVids<span className="hcolornav">.live</span>
+          Plataforma de<span className="hcolornav">&nbsp;cursos</span>
           </h1>
           </div>
       </Link>
@@ -37,10 +37,12 @@ function NavScroll() {
             {location.pathname !== '/' && (
                   <Nav.Link href={'/'} className="linksnav">Inicio</Nav.Link>
             )}
-                  <Nav.Link href={`/channel/${userData.username}`} className="linksnav">Mi canal</Nav.Link>
-                  <Nav.Link href="/create" className="linksnav">Subir Video</Nav.Link>                  
-
-                  
+            {userData.username === "admin" && (
+              <>
+                      <Nav.Link href={`/channel/${userData.username}`} className="linksnav">Editar cursos</Nav.Link>
+                      <Nav.Link href="/create" className="linksnav">Subir curso</Nav.Link>   
+              </>
+            )}
                   <Nav.Link onClick={handleLogout} className="linksnav">Cerrar Sesión</Nav.Link>                  
                   
             </>

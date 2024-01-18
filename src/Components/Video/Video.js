@@ -222,18 +222,8 @@ function Video() {
           </div>
           
           <div className="channelavatar">
-              <div>
-                <Link className="channelCard" to={`/channel/${videoData.creator}`}>
-                  <Avatar sx={{ bgcolor: '#480442' }} aria-label="avatar">     
-                        {avatar}
-                  </Avatar>
-                </Link>
-              </div>
-              <div className="channelavatarletter">
-                <Link className="channelCard" to={`/channel/${videoData.creator}`}>
-                  <h4>{videoData.creator}</h4>
-                </Link>
-              </div>
+              
+              
 
             <div className="viewsbox">
                 <div>

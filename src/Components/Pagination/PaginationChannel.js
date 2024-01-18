@@ -44,11 +44,7 @@ const [userData, setUserData] = useState(null);
 
   return (
     <div>
-        <div className="heading-container">
-          <h2>
-          Videos de <span className="hcolor">{creator}</span>
-          </h2>
-        </div>
+        
       {data.length > 0 && (
           data && 
             <div className="videos">

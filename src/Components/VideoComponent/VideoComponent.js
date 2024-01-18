@@ -16,8 +16,8 @@ export default function VideoComponent(props) {
     const [titleLocal, setTitleLocal] = useState(props.title);
     const [descriptionLocal, setDescriptionLocal] = useState(props.description);
     const [publicLocal, setPublicLocal] = useState(Boolean(props.public));
-    const mostrarTresPuntos = props.title.length > 14;
-    const titleConst = mostrarTresPuntos ? `${props.title.slice(0, 15)}...` : props.title;
+    const mostrarTresPuntos = props.title.length > 22;
+    const titleConst = mostrarTresPuntos ? `${props.title.slice(0, 22)}...` : props.title;
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const handleMenuOpen = (event) => {
@@ -94,15 +94,7 @@ export default function VideoComponent(props) {
     <div className='card'>
       <Card sx={{ bgcolor: "whitesmoke"}} >
         <CardHeader
-          avatar={
-            <Link to={`/channel/${props.creator_username}`} className='link'>
-                <Avatar sx={{ bgcolor: '#409012' }} aria-label="avatar">
-                
-                {avatar}
-                
-                </Avatar>
-            </Link>
-          }
+          
           action={
 
             (props.creator_video && props.channel) &&(
@@ -131,9 +123,7 @@ export default function VideoComponent(props) {
               <p>{titleConst}</p>
             )}
             </Link>}
-          subheader={<Link to={`/channel/${props.creator_username}`} className='linkChannel'>
-                        {props.creator_username}
-                    </Link>}
+          
         />
         <a href={`${URL}/video/${props.id}`} className='link'>
             <CardMedia className='imagen'
@@ -151,7 +141,7 @@ export default function VideoComponent(props) {
                         <p className='editTitle'>Editar descripción</p><input type='text' value={descriptionLocal} placeholder="Nueva descripción..." onChange={e => setDescriptionLocal(e.target.value)}></input>
                         </div>
                         <div className='editTitle'>
-                          <p>Listar público</p>
+                          <p>Público</p>
                         <FormControlLabel className='checkvideos'
                           control={
                             <Checkbox
