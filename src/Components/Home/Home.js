@@ -12,6 +12,7 @@ class Home extends Component {
       <div>
         
         <NavScroll />
+        <h1>Educar para no contaminar</h1>
         <Banner />
         <Pagination />
         
