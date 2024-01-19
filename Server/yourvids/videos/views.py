@@ -109,7 +109,7 @@ class SendEmail(APIView):
 
         # Configuración del correo y envío
         r = resend.Emails.send({
-            "from": "onboarding@resend.dev",
+            "from": "CIBRUC@yourvids.live",
             "to": self.request.user.email,
             "subject": "Felicitaciones por finalizar el curso",
             "html": html_content
